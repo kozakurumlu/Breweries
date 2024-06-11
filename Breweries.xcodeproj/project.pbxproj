@@ -14,6 +14,10 @@
 		E723CC9C2C1848920029713A /* BreweriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CC9B2C1848920029713A /* BreweriesTests.swift */; };
 		E723CCA62C1848920029713A /* BreweriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCA52C1848920029713A /* BreweriesUITests.swift */; };
 		E723CCA82C1848920029713A /* BreweriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCA72C1848920029713A /* BreweriesUITestsLaunchTests.swift */; };
+		E723CCB72C184C9D0029713A /* BreweryLightweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCB62C184C9D0029713A /* BreweryLightweight.swift */; };
+		E723CCBA2C184D320029713A /* BreweryWebAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCB92C184D320029713A /* BreweryWebAdaptor.swift */; };
+		E723CCBE2C1855CD0029713A /* BreweryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCBD2C1855CD0029713A /* BreweryDetailView.swift */; };
+		E723CCC02C18562C0029713A /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E723CCBF2C18562C0029713A /* Brewery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		E723CCA12C1848920029713A /* BreweriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E723CCA52C1848920029713A /* BreweriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesUITests.swift; sourceTree = "<group>"; };
 		E723CCA72C1848920029713A /* BreweriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E723CCB62C184C9D0029713A /* BreweryLightweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryLightweight.swift; sourceTree = "<group>"; };
+		E723CCB92C184D320029713A /* BreweryWebAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryWebAdaptor.swift; sourceTree = "<group>"; };
+		E723CCBD2C1855CD0029713A /* BreweryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailView.swift; sourceTree = "<group>"; };
+		E723CCBF2C18562C0029713A /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		E723CC892C18488F0029713A /* Breweries */ = {
 			isa = PBXGroup;
 			children = (
+				E723CCB82C184D190029713A /* Web */,
+				E723CCB52C184C2F0029713A /* View */,
+				E723CCB42C184C250029713A /* Model */,
 				E723CC8A2C18488F0029713A /* BreweriesApp.swift */,
-				E723CC8C2C18488F0029713A /* ContentView.swift */,
 				E723CC8E2C1848910029713A /* Assets.xcassets */,
 				E723CC902C1848910029713A /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				E723CCA72C1848920029713A /* BreweriesUITestsLaunchTests.swift */,
 			);
 			path = BreweriesUITests;
+			sourceTree = "<group>";
+		};
+		E723CCB42C184C250029713A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E723CCB62C184C9D0029713A /* BreweryLightweight.swift */,
+				E723CCBF2C18562C0029713A /* Brewery.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E723CCB52C184C2F0029713A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E723CC8C2C18488F0029713A /* ContentView.swift */,
+				E723CCBD2C1855CD0029713A /* BreweryDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E723CCB82C184D190029713A /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				E723CCB92C184D320029713A /* BreweryWebAdaptor.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E723CCBE2C1855CD0029713A /* BreweryDetailView.swift in Sources */,
 				E723CC8D2C18488F0029713A /* ContentView.swift in Sources */,
+				E723CCB72C184C9D0029713A /* BreweryLightweight.swift in Sources */,
 				E723CC8B2C18488F0029713A /* BreweriesApp.swift in Sources */,
+				E723CCC02C18562C0029713A /* Brewery.swift in Sources */,
+				E723CCBA2C184D320029713A /* BreweryWebAdaptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
